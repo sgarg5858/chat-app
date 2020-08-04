@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-6 offset-sm-3 col-xs-10 offset-xs-1">
+           <mat-card style="margin-top: 20vh;">
+            <form [formGroup]="joinForm" style="display: flex;flex-direction: column;align-items: center;">
+                <mat-form-field style="width: 80%;">
+                    <input formControlName="name" placeholder="Your Name" matInput type="text">
+                </mat-form-field>
+                <mat-form-field style="width: 80%;">
+                    <input formControlName="room" placeholder="Room No" matInput type="text">
+                </mat-form-field>
+                <button style="width: 200px;" color="primary" mat-raised-button (click)="onJoin()">Join</button>
+            </form>
+           </mat-card>
+        </div>
+    </div>
+</div>
